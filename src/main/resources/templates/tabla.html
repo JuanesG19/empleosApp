@@ -7,10 +7,13 @@
           integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 </head>
 <body>
+
+<img th:src="@{/images/logo.png}" width="70" height="70">
 <h1 class="text-primary">Lista de Vacantes</h1>
 
 <table class="table table-striped table-hover table-bordered">
     <tr>
+        <td>Logo</td>
         <td>Id</td>
         <td>Nombre</td>
         <td>Fecha Publicacion</td>
@@ -20,6 +23,9 @@
     </tr>
 
     <tr th:each="vacante: ${vacantes}">
+        <td>
+            <img th:src="@{/images/{img}(img=${vacante.imagen})}" width="50" height="50">
+        </td>
         <td th:text="${vacante.id}"></td>
         <td th:text="${vacante.nombre}"></td>
         <td th:text="${vacante.fecha}"></td>

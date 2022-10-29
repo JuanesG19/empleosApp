@@ -82,6 +82,7 @@ public class HomeController {
             vacante1.setFecha(new Date());
             vacante1.setSalario(8500);
             vacante1.setDestacado(1);
+            vacante1.setImagen("empresa1.png");
 
             Vacante vacante2 = new Vacante();
             vacante2.setId(1);
@@ -90,6 +91,7 @@ public class HomeController {
             vacante2.setFecha(new Date());
             vacante2.setSalario(12000);
             vacante2.setDestacado(0);
+            vacante2.setImagen("empresa2.png");
 
             Vacante vacante3 = new Vacante();
             vacante3.setId(1);
@@ -106,6 +108,8 @@ public class HomeController {
             vacante4.setFecha(new Date());
             vacante4.setSalario(7500);
             vacante4.setDestacado(1);
+            vacante4.setImagen("empresa3.png");
+
 
             lista.add(vacante1);
             lista.add(vacante2);

@@ -16,6 +16,8 @@ public class Vacante {
 
     private Integer destacado;
 
+    private String imagen = "no-image.png";
+
     /**
      * Metodos
      */
@@ -62,6 +64,10 @@ public class Vacante {
     public Integer getDestacado() {return destacado;}
 
     public void setDestacado(Integer destacado) {this.destacado = destacado;}
+
+    public String getImagen() {return imagen;}
+
+    public void setImagen(String imagen) {this.imagen = imagen;}
 
     @Override
     public String toString() {
